@@ -93,16 +93,12 @@ def load_data(city, month, day):
     return df
 
 def df_iterator(iterable, size, start_at):
-    """
-    Helper function. Generator that helps to load data piece by piece.
-    """
+    """Helper function. Generator that helps to load data piece by piece."""
     for i in range(start_at, len(iterable), size):
         yield iterable[i:i + size]
 
 def show_raw_data():
-    """
-    Prints raw filtered data, 5 rows by iteration.
-    """
+    """Prints raw filtered data, 5 rows by iteration."""
     see_data = input('Would you like to see the raw data? Please, enter yes or no.\n').lower()
     while see_data not in (['yes','no']):
         see_data = input('\nSorry, I don\'t understand. Please, type yes or no.\n').lower()
@@ -120,25 +116,19 @@ def show_raw_data():
             start_at_row += 5
 
 def common_values(values):
-    """
-    Helper function. Helps to define most common values in a column. Returns 2 values.
-    """
+    """Helper function. Helps to define most common values in a column. Returns 2 values."""
     max_value = values.value_counts().max()
     most_common_value = values.mode()[0]
     return most_common_value, max_value
 
 def count_values(values):
-    """
-    Helper function. Helps to count values in a column. Prints values and their counts.
-    """
+    """Helper function. Helps to count values in a column. Prints values and their counts."""
     values_count = values.value_counts()
     for i in range(values_count.index.size):
         print('{}: {}'.format(values_count.index[i], values_count[i]))
 
 def time_stats(df):
-    """
-    Displays statistics on the most frequent times of travel.
-    """
+    """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -167,9 +157,7 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """
-    Displays statistics on the most popular stations and trip.
-    """
+    """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -192,9 +180,7 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """
-    Displays statistics on the total and average trip duration.
-    """
+    """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
@@ -213,9 +199,7 @@ def trip_duration_stats(df):
 
 
 def user_stats(df, city):
-    """
-    Displays statistics on bikeshare users.
-    """
+    """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
