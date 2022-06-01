@@ -28,5 +28,9 @@ This project analyzes data provided by Motivate, a bike share system provider fo
 - NumPy
 - pandas
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+## Credits
+- Udacity course [Programming for Data Science with Python](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104)
+- [Markdown formatting for README.md](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+## Copyright and licensing information
+Please, use the project files for learning purposes only.
