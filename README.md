@@ -8,11 +8,25 @@ This is a part of the Udacity Programming for Data Science with Python course
 ### Date created
 31/05/2022
 
-### Description
-Describe what your project is about and what it does
+## Project Description
+This project analyzes data provided by Motivate, a bike share system provider for many major cities in the United States, to uncover bike share usage patterns. It compares the system usage between three large cities: Chicago, New York City, and Washington, DC.
+
+### Statistics Computed
+- Popular times of travel
+- Popular stations and trip
+- Trip duration
+- User info
 
 ### Files used
-Include the files used
+- bikeshare.py - main Python script to run
+- chicago.csv - contains bikeshare data for Chicago city
+- new_york_city.csv - contains bikeshare data for New York city
+- washington.csv - contains bikeshare data for Washington city
+- README.md - Readme file containing project overview
+
+## Required Libraries
+- NumPy
+- pandas
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
